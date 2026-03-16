@@ -1,7 +1,6 @@
 import pdfplumber
 import streamlit as st
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain_community.vectorstores import FAISS
 from langchain_core.output_parsers import StrOutputParser
