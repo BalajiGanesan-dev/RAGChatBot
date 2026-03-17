@@ -6,8 +6,12 @@ from langchain_community.vectorstores import FAISS
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
+import os
+from dotenv import load_dotenv
 
-GOOGLE_API_KEY = "AIzaSyCc5_lPLessig3HbfmZx3qPfjWYhWuySz8"
+
+load_dotenv()
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 
 
